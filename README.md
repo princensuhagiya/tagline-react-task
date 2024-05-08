@@ -1,3 +1,12 @@
+<!-- Project Run Command -->
+
+<!-- this is project run command start-->
+
+npm i
+npm run dev
+
+<!-- this is project run command end -->
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
