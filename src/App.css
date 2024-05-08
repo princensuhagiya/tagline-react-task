@@ -1,3 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flex-filter {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+}
+.main-filter {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-right: 2px solid gray;
+  width: 100%;
+}
+
+.single-filter span {
+  display: block;
+  text-align: start;
+  color: #000;
+}
+.filter-input {
+  appearance: none;
+  background-color: white;
+  border: transparent;
+  border-bottom: 2px solid gray;
+}
+.filter-input:focus-visible {
+  outline: none;
+}
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.single-filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 #root {
   max-width: 1440px;
   margin: 0 auto;
