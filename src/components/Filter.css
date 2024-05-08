@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flex-filter {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+}
+.main-filter {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-right: 2px solid gray;
+  width: 100%;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+}
+
+.toggle-input {
+  display: none;
+}
+
+.toggle-label {
+  display: block;
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.toggle-input:checked + .toggle-label {
+  background-color: #66bb6a; /* Change color when switch is on */
+}
+
+.toggle-input:checked + .toggle-label .toggle-button {
+  left: calc(100% - 18px);
+}
+.single-filter span {
+  display: block;
+  text-align: start;
+  color: #000;
+}
+.filter-input {
+  appearance: none;
+  background-color: white;
+  border: transparent;
+  border-bottom: 2px solid gray;
+}
+.filter-input:focus-visible {
+  outline: none;
+}
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.single-filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
